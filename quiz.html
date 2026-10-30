@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige Vivir | Prevención</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Prevención del consumo de sustancias controladas. </h1>
+        <p>Decir NO a las drogas es decir SI a tus sueños, a tu salud y a los que te quieren.</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html">Información</a>
+            <a href="#quiz">Cuestionario</a>
+            <a href="index.html">Nuestro equipo</a>
+        </nav>
+    </header>
+
+    <main>   
+
+        <section id="quiz">
+            <h2>Cuestionario de prevención</h2>
+            <p>Responde las preguntas para repasar lo aprendido. Al final verás tu puntaje.</p>
+
+            <div id="pantallaInicio" class="caja-quiz">
+                <label for="nombreJugador">Tu nombre (opcional):</label>
+                <input type="text" id="nombreJugador" placeholder="Escribe tu nombre">
+                <button id="btnComenzar" class="boton">Comenzar</button>
+            </div>
+
+            <div id="pantallaPregunta" class="caja-quiz oculto">
+                <p id="textoProgreso"></p>
+                <p id="textoPuntaje">Puntos: 0</p>
+                <div class="barra-fondo"><div id="barraQuiz"></div></div>
+                <h3 id="textoPregunta"></h3>
+                <div id="contenedorOpciones"></div>
+                <p id="explicacion" class="oculto"></p>
+                <button id="btnSiguiente" class="boton" disabled>Siguiente</button>
+            </div>
+
+            <div id="pantallaResultado" class="caja-quiz oculto">
+                <h3 id="tituloResultado">Resultado</h3>
+                <p id="circuloPuntaje" class="puntaje-final">0%</p>
+                <p id="mensajeResultado"></p>
+                <h4>Revisión de respuestas</h4>
+                <ol id="listaRevision"></ol>
+                <button id="btnReiniciar" class="boton">Intentar otra vez</button>
+            </div>
+        </section>
+
+        <section id="equipo">
+            <h2>Sobre el proyecto</h2>
+            <p>Somos estudiantes y desarrollamos esta página como una actividad educativa. El objetivo es promover la prevención, el acceso a información confiable y las decisiones saludables.</p>
+            <p><strong>Integrantes:</strong> Collao Giovanni
+                Cayola Lmberth</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>Elige Vivir — Proyecto educativo de prevención</p>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* Estilos básicos para el proyecto Elige Vivir */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6f5;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #176b59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 950px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+h2 {
+    color: #176b59;
+}
+
+.principal {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta {
+    flex: 1;
+    background-color: #e9f3f0;
+    padding: 15px;
+    border: 1px solid #cbded8;
+    border-radius: 5px;
+}
+
+.boton {
+    background-color: #176b59;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #0f4d40;
+}
+
+.caja-quiz {
+    background-color: #f8fbfa;
+    border: 1px solid #cbded8;
+    padding: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+input {
+    display: block;
+    width: 95%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.opcion {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.opcion:hover {
+    background-color: #edf6f2;
+}
+
+.opcion.correcta {
+    background-color: #d7f0d9;
+    border-color: #338642;
+}
+
+.opcion.incorrecta {
+    background-color: #f7dddd;
+    border-color: #b83b3b;
+}
+
+.barra-fondo {
+    background-color: #ddd;
+    height: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#barraQuiz {
+    background-color: #2b9a76;
+    width: 0;
+    height: 12px;
+}
+
+.puntaje-final {
+    font-size: 28px;
+    font-weight: bold;
+    color: #176b59;
+}
+
+.oculto {
+    display: none;
+}
+
+footer {
+    background-color: #176b59;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 650px) {
+    .tarjetas {
+        display: block;
+    }
+
+    .tarjeta {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
